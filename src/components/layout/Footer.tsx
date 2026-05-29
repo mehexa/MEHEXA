@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="lg:col-span-4 space-y-5">
           <div className="flex items-center gap-3">
             <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-ink-50/10 shadow-sm">
-              <Image src="/brand/logo.jpeg" alt="MEHEXA" fill sizes="40px" className="object-cover" />
+              <Image src="/MEHEXA/brand/logo.jpeg" alt="MEHEXA" fill sizes="40px" className="object-cover" />
             </div>
             <span className="display text-xl text-ink-50">
               ME<span className="text-gold-600">HEXA</span>

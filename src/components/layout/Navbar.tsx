@@ -51,7 +51,7 @@ export default function Navbar() {
         <nav className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 flex items-center justify-between gap-8">
           <Link href="/" onClick={() => setOpenMobile(false)} className="flex items-center gap-2.5 group relative z-[60]">
             <div className="relative w-9 h-9 rounded-full overflow-hidden ring-1 ring-ink-50/10 group-hover:ring-gold-500/60 transition shadow-sm">
-              <Image src="/brand/logo.jpeg" alt="MEHEXA" fill sizes="36px" className="object-cover" priority />
+              <Image src="/MEHEXA/brand/logo.jpeg" alt="MEHEXA" fill sizes="36px" className="object-cover" priority />
             </div>
             <span className="display text-lg tracking-tight text-ink-50">
               ME<span className="text-gold-600">HEXA</span>
