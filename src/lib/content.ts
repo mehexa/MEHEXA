@@ -237,6 +237,8 @@ export const MILK_STATS = [
   { value: 45, label: "Hepatic steatosis reduction", suffix: "%", note: "35–45%" },
 ];
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "/MEHEXA";
+
 export const FRAME_SEQUENCES = {
   seq1: { dir: "/frames/seq1", count: 50, prefix: "ezgif-frame-", pad: 3, ext: ".jpg" },
   seq1light: { dir: "/frames/seq1light-mode", count: 100, prefix: "ezgif-frame-", pad: 3, ext: ".jpg" },
@@ -246,5 +248,5 @@ export const FRAME_SEQUENCES = {
 export function framePath(seq: keyof typeof FRAME_SEQUENCES, i: number) {
   const s = FRAME_SEQUENCES[seq];
   const num = String(i + 1).padStart(s.pad, "0");
-  return `${s.dir}/${s.prefix}${num}${s.ext}`;
+  return `${BASE_PATH}${s.dir}/${s.prefix}${num}${s.ext}`;
 }
